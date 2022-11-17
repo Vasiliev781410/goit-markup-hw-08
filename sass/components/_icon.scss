@@ -1,0 +1,14 @@
+.icon{
+    object-fit:  cover;
+    object-position: center; 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+.icon--footer{
+    fill: var(--accent-text-color1); 
+  }
+
+.icon--client,
+.icon--team { 
+   fill: #afb1b8; 
+ }

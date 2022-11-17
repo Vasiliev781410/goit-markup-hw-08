@@ -1,0 +1,39 @@
+.features{
+    @extend %padding-section; 
+}
+.features__icon-container{
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background: var(--bg-icon-features); 
+}
+.features__list{
+    @extend %decoration-list;
+}
+
+.features__item{ 
+    width: 270px; 
+ }
+.features__item:not(:last-child){
+    width: 270px;     
+ }
+.features__name{  
+    color: var(--primary-text-color);
+}
+.features__name{        
+    margin-bottom: 10px;
+      
+    font-size: 14px;
+    font-weight: 700;   
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.features__text,.team__member-position{
+    color: var(--secondary-text-color);
+}
+.features__text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;    
+}

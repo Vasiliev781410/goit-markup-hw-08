@@ -1,0 +1,26 @@
+%decoration{
+    text-decoration: none;   
+}
+
+%padding-section{
+    padding-top:  94px;
+    padding-bottom:  94px;   
+}
+
+%decoration-list{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+%caption-parameters{ 
+    margin-bottom: 50px;
+    
+    color: var(--primary-text-color);  
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;    
+}
