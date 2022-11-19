@@ -2,7 +2,8 @@
     list-style-type: none;
 }
 .project-filter{    
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap; 
     justify-content: center;  
     margin-bottom: 34px; 
     text-decoration: none;

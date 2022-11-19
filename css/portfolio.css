@@ -277,6 +277,7 @@ body {
 
 .project-filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 34px;
   text-decoration: none;
@@ -307,6 +308,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 30px;
+  justify-content: center;
   list-style-type: none;
 }
 
@@ -315,9 +317,18 @@ body {
 }
 
 .project-types__item {
-  max-width: 370px;
   border: 1px solid var(--project-card-border);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .project-types__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-types__item {
+    width: 370px;
+  }
 }
 
 .project-types__item:hover {

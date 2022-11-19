@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;  
     gap: 30px 30px; 
+    justify-content: center;
 
     list-style-type: none;
 
@@ -10,8 +11,12 @@
      padding: 24px 20px;   
 }
 .project-types__item{     
-    max-width: 370px;    
-
+    @media screen and (min-width: 768px) {
+        width: 354px; 
+    }
+    @media screen and (min-width: 1200px) {
+        width: 370px; 
+    }      
     border: 1px solid var(--project-card-border);  
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
