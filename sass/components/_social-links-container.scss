@@ -1,6 +1,14 @@
 .social-links-container{ 
-    display: block;  
-    margin-left: 70px;     
+    display: block;   
+    @media screen and (max-width:767px) {  
+        margin-bottom: 60px;     
+    }           
+    @media  screen and (min-width: 768px) and (max-width: 1199px){
+        margin-left: 165px;       
+    } 
+    @media  screen and (min-width: 1200px){
+        margin-left: 70px;       
+    }                           
 } 
 .social-links-container__text{    
     margin-top: 12px;
@@ -10,5 +18,8 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
+    @media  screen and (min-width: 1199px) {
+        text-align: left;      
+    } 
 }

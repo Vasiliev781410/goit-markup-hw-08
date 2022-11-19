@@ -1,39 +1,40 @@
 .form-order{  
-    padding: 40px;
+    padding: 32px;
 }
 .form-order__elements{
     display: block;
-    width: 448px;
-    height: 342px;
     margin-bottom: 20px;
 }
 .form-order__caption{
-    margin-bottom: 12px;  
-    font-size: 20px;
-    font-weight: 700;
+    margin-bottom: 12px;
+    height: 60px;
+    @media screen and (min-width:1200px) {    
+        height: 23px; 
+    }       
+    font-size: 20px;   
     line-height: 1.15;
+    @media screen and (min-width:1200px) {       
+        line-height: 1.5;  
+    }   
+    font-weight: 700;       
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: rgba(33, 33, 33, 1);
 
 }
 .form-order__label{
     position: relative;    
-    display: block;  
+    display: block; 
     font-size: 12px; 
-    line-height: 1.67;
+    line-height: 1.67;      
+    height: 58px;
     letter-spacing: 0.01em;
     text-align: left;
-    color: rgba(117, 117, 117, 1);   
+    color: rgba(117, 117, 117, 1); 
+    margin-bottom: 10px;  
 }
-/* .form-container{ */
-/*     position: relative;  */
-/*     display: flex;  */
-/* } */
-.form-order__input{ 
-    /* position: relative;   */
-    display: block; 
-    margin-bottom: 10px;
+.form-order__input{    
+    display: block;     
     padding-left: 42px;
     width: 100%;
     height: 40px;
@@ -50,12 +51,32 @@
         color: var(--accent-text-color2); 
     } 
 }
-
+.form-order__label--comment{
+    height: 138px;   
+    margin-bottom: 20px;  
+}
+.form-order--comment{       
+    width: 100%; 
+    height: 120px;
+    font-size: 12px;  
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    text-align: left;     
+    border: 1px solid rgba(122, 66, 66, 0.2);
+    padding: 11px 16px 12px 16px;
+    resize: none;
+}
+.form-comment:placeholder-shown{
+    color: rgba(117, 117, 117, 0.5);   
+}
 .form-order__agreement{
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;     
-    gap: 9px;
+    @media screen and (min-width:1200px) {    
+        justify-content: center;   
+    }       
+    gap: 9px;    
     margin-bottom: 30px;
     margin-top: 20px; 
 }
@@ -72,39 +93,30 @@
     }   
 }
 .form-order__text-agreement{
-    display: block;
+    display: inline-block;
     margin-left: 8px;
-}
-
-.form-order--comment{  
-    margin-bottom: 20px;  
-    height: 120px; 
-    width: 100%; 
-    font-size: 12px;  
-    line-height: 1.67;
-    letter-spacing: 0.01em;
-    text-align: left;     
-    border: 1px solid rgba(122, 66, 66, 0.2);
-    padding: 11px 16px 12px 16px;
-    resize: none;
-}
-.form-comment:placeholder-shown{
-    color: rgba(117, 117, 117, 0.5);   
+    height: 14px;
+    width: 235px;
 }
 
 .form-order--agreement{
     display: flex; 
     align-items: center;
     
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.17;
+   /*  font-size: 14px; */
+   /*  line-height: 1.714; */
     font-weight: 400;
-    line-height: 1.714;
     letter-spacing: 0.03em;
   text-align: left;   
+  height: 14px;
 } 
-.form-order__link{  
+.form-order__link{
+   /*  display: inline-block;   */
     color: var(--accent-text-color2);
-    margin-left: 5px;
+   /*  margin-left: 5px; */
+    height: 14px;   
 }
 
 

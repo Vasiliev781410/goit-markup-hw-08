@@ -1,6 +1,7 @@
 @import './utils/vars';
-@import './components/common';
+@import './utils/mixins';
 @import './utils/placeholders';
+@import './components/common';
 @import './components/icon';
 @import './components/container';
 @import './components/header';

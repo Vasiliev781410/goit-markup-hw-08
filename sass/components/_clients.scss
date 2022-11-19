@@ -7,12 +7,18 @@
 }
 
 .clients__container{
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: flex;   
+     @include gap-list(30px,30px);  
+
+     @media screen and (min-width:1200px) {    
+        @include gap-list(0px,30px);   
+     }
+     flex-wrap: wrap; 
+     justify-content: center; 
+                     
 }
 .clients__link{
-     display: flex;
+    display: flex;
     align-content: center;
     justify-content: center;
     width: 170px;

@@ -1,6 +1,13 @@
 .address-container{
     display: block;
-    width: 208px;
+    width: 100%; 
+    @media screen and (min-width:768px) and (max-width:1199px)  {      
+        width: 232px;  
+        text-align: center;
+    }  
+    @media screen and (min-width:1199px) {  
+        width: 208px;     
+    }          
 }
 .address-container__link{
     text-decoration: none;
@@ -18,7 +25,14 @@
     }    
 }
 .address-container__list{ 
-    width: 231px;
+    @media screen and (max-width:767px) {  
+        margin-bottom: 60px;     
+    }          
+    width: 100%;    
+    
+    @media screen and (min-width:1199px) {  
+        width: 231px;     
+    }        
     font-style: 400;
     font-weight: 700;
     font-size: 14px;

@@ -15,6 +15,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
    
     border-radius: 0px 0px 4px 4px;
+    @extend %width-item;
+    text-align: center;
  }
   
  .team__member-image{
@@ -28,7 +30,7 @@
      font-weight: 500;
      line-height: 1.19;
      letter-spacing: 0.03em;
-     text-align: center; 
+    /*  text-align: center;  */
  
  }
  .team__member-position{ 
@@ -37,5 +39,5 @@
      font-size: 16px;
      line-height: 1.19;
      letter-spacing: 0.03em;
-     text-align: center; 
+    //  text-align: center; 
  }

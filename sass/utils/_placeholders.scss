@@ -9,9 +9,55 @@
 
 %decoration-list{
     list-style-type: none;
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: flex;   
+   /*  width: 100%;  */
+    @media screen and (max-width:767px) { 
+        @include gap-list(30px,0px);        
+    }     
+    @media screen and (min-width:768px) {
+        @include gap-list(30px,30px);  
+    }  
+    @media screen and (min-width:1200px) {         
+       @include gap-list(30px,30px);   
+    }
+    flex-wrap: wrap; 
+    justify-content: center;                  
+}
+
+%width-item{    
+    @media screen and (max-width:767px) { 
+        @include width-item(0px,1);        
+    }     
+    @media screen and (min-width:768px) {
+        @include width-item(30px,2);  
+    }  
+    @media screen and (min-width:1200px) {        
+       @include width-item(90px,4);   
+    }                  
+}
+
+%width-item{    
+    @media screen and (max-width:767px) { 
+        @include width-item(0px,1);        
+    }     
+    @media screen and (min-width:768px) {
+        @include width-item(30px,2);  
+    }  
+    @media screen and (min-width:1200px) {        
+       @include width-item(90px,4);   
+    }                  
+}
+
+%width-item-2-3-6{    
+    @media screen and (max-width:767px) { 
+        @include width-item(30px,2);        
+    }     
+    @media screen and (min-width:768px) {
+        @include width-item(60px,3);  
+    }  
+    @media screen and (min-width:1200px) {        
+       @include width-item(150px,6);   
+    }                  
 }
 
 %caption-parameters{ 
@@ -24,3 +70,37 @@
     letter-spacing: 0.03em;
     text-align: center;    
 }
+
+%unvisible-only-mobile{ 
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+%visible-only-desktop{ 
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+%visible-only-mobile{ 
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+%flex-from-mobile{  
+    @media screen and (min-width:480px)  {
+        display: flex;   
+    }  
+}   
+
+%flex-from-tablet{  
+    @media screen and (min-width:768px)  {
+        display: flex;   
+    }  
+}   
+
+%flex-only-desktop{  
+    @media screen and (min-width:1200px)  {
+        display: flex;   
+    }  
+}        

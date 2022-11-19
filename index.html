@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,42 +18,47 @@
         <div class="container container--header">       
             <!-- logo -->           
             <a href="./index.html" class="logo"> 
-                <span class="logo__accent">Web</span>
-                Studio 
+                <span class="logo__accent">Web</span><span>Studio</span>    
             </a>
-            <!-- navigation -->
-            <nav class="nav">                
-                <ul class="nav__list">                  
-                    <li class="nav__item">
-                        <a class="nav__link nav--current" href="./index.html">Студія</a>
-                    </li>
-                    <li class="nav__item">
-                        <a  class="nav__link" href="./portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="nav__item">
-                        <a  class="nav__link" href="/contact">Контакти</a>
-                    </li>        
-                </ul>
-            </nav>
-            <!-- contacts -->
-            <div class="contacts">
-                <a class="contacts__link" href="mailto:info@devstudio.com">
-                    <div class="contacts__icon-container">
-                        <svg class="icon" width="16" height="12">                        
-                            <use xlink:href="./images/icons.svg#icon-envelope"></use>       
-                        </svg>                    
-                        <span>info@devstudio.com</span>
-                    </div>
-                </a>  
-                <a class="contacts__link" href="tel:+380961111111">
-                    <div class="contacts__icon-container">
-                        <svg class="icon" width="10" height="16">                        
-                            <use xlink:href="./images/icons.svg#icon-smartphone"></use>     
-                        </svg>                    
-                        <span>+38 096 111 11 11</span>
-                    </div>                                        
-                </a>
-            </div> 
+            <!-- <div class="menu-container"> -->
+                <!-- <button type="button" class="button-menu"> -->
+                <!-- </button> -->
+                <!-- <div class="mobile-menu">                 -->
+                    <!-- navigation -->
+                    <nav class="nav">                
+                        <ul class="nav__list">                  
+                            <li class="nav__item">
+                                <a class="nav__link nav--current" href="./index.html">Студія</a>
+                            </li>
+                            <li class="nav__item">
+                                <a  class="nav__link" href="./portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="nav__item">
+                                <a  class="nav__link" href="/contact">Контакти</a>
+                            </li>        
+                        </ul>
+                    </nav>
+                    <!-- contacts -->
+                    <div class="contacts">
+                        <a class="contacts__link" href="mailto:info@devstudio.com">
+                            <div class="contacts__icon-container">
+                                <svg class="icon" width="16" height="12">                        
+                                    <use xlink:href="./images/icons.svg#icon-envelope"></use>       
+                                </svg>                    
+                                <span>info@devstudio.com</span>
+                            </div>
+                        </a>  
+                        <a class="contacts__link" href="tel:+380961111111">
+                            <div class="contacts__icon-container">
+                                <svg class="icon" width="10" height="16">                        
+                                    <use xlink:href="./images/icons.svg#icon-smartphone"></use>     
+                                </svg>                    
+                                <span>+38 096 111 11 11</span>
+                            </div>                                        
+                        </a>
+                    </div> 
+                <!-- </div> -->
+            <!-- </div> -->
         </div>          
     </header>                                              
     <main>                
@@ -344,49 +349,51 @@
         </section>    
     </main>
      <footer class="footer">
-        <div class="container container--footer"> 
-            <div class="address-container">      
-                <a href="./index.html" class="logo logo--color"> <span class="logo__accent">Web</span>Studio </a>             
-                <address>
-                    <ul class="address-container__list">
-                        <li class="address-container__item">  <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru" target="_blank"  rel="noopener noreferrer" class="address-container__link address-container--post-address">м. Київ, пр-т Лесі Українки, 26</a> </li>         
-                        <li class="address-container__item">  <a href="mailto:info@devstudio.com" class="address-container__link">info@devstudio.com</a> </li>
-                        <li class="address-container__item">  <a href="tel:+380961111111" class="address-container__link">+38 096 111 11 11</a>  </li>
-                    </ul>                                     
-                </address>
-            </div>
-            <div class="social-links-container">
-                <p class="social-links-container__text">ПРИЄДНУЙТЕСЬ</p>
-                <ul class="social-links social-links--footer">                        
-                    <li class="social-links__icon-container">
-                        <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
-                            <svg class="icon icon--footer" width="20" height="20">                        
-                                <use xlink:href="./images/icons.svg#icon-instagram"></use>    
-                            </svg> 
-                        </a>
-                    </li>
-                    <li class="social-links__icon-container">
-                        <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
-                            <svg class="icon icon--footer" width="20" height="20">                        
-                                <use xlink:href="./images/icons.svg#icon-twitter"></use>    
-                            </svg> 
-                        </a>
-                    </li>
-                    <li class="social-links__icon-container">
-                        <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
-                            <svg class="icon icon--footer" width="20" height="20">                   
-                                <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a> 
-                    </li>
-                    <li class="social-links__icon-container">
-                        <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
-                            <svg class="icon icon--footer" width="20" height="20">                   
-                                <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                            </svg> 
-                        </a>
-                    </li>       
-                </ul>
+        <div class="container container--footer">
+            <div class="footer__container-tablet">
+                <div class="address-container">      
+                    <a href="./index.html" class="logo logo--color"> <span class="logo__accent">Web</span><span>Studio</span></a>             
+                    <address>
+                        <ul class="address-container__list">
+                            <li class="address-container__item">  <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru" target="_blank"  rel="noopener noreferrer" class="address-container__link address-container--post-address">м. Київ, пр-т Лесі Українки, 26</a> </li>         
+                            <li class="address-container__item">  <a href="mailto:info@devstudio.com" class="address-container__link">info@devstudio.com</a> </li>
+                            <li class="address-container__item">  <a href="tel:+380961111111" class="address-container__link">+38 096 111 11 11</a>  </li>
+                        </ul>                                     
+                    </address>
+                </div>
+                <div class="social-links-container">
+                    <p class="social-links-container__text">ПРИЄДНУЙТЕСЬ</p>
+                    <ul class="social-links social-links--footer">                        
+                        <li class="social-links__icon-container">
+                            <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
+                                <svg class="icon icon--footer" width="20" height="20">                        
+                                    <use xlink:href="./images/icons.svg#icon-instagram"></use>    
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-links__icon-container">
+                            <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
+                                <svg class="icon icon--footer" width="20" height="20">                        
+                                    <use xlink:href="./images/icons.svg#icon-twitter"></use>    
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-links__icon-container">
+                            <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
+                                <svg class="icon icon--footer" width="20" height="20">                   
+                                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a> 
+                        </li>
+                        <li class="social-links__icon-container">
+                            <a class="social-links__link social-links__link--footer" href="#" target="_blank"  rel="noopener noreferrer">
+                                <svg class="icon icon--footer" width="20" height="20">                   
+                                    <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                                </svg> 
+                            </a>
+                        </li>       
+                    </ul>
+                </div> 
             </div> 
             <form class="form-subscription">                 
                 <p class="form-subscription__caption">Підпишіться на розсилку</p>   
@@ -427,7 +434,7 @@
                         </svg>                        
                     </label>
 
-                    <label class="form-order__label" for="comment">Коментар
+                    <label class="form-order__label form-order__label--comment" for="comment">Коментар
                         <textarea class="form-order__input form-order--comment" name="comment" id="comment" placeholder="Введіть текст"> </textarea> 
                     </label>                   
                 </div> 

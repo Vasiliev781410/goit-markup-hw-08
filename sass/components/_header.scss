@@ -1,8 +1,8 @@
 .container--header{ 
-    /* position: relative;   */
-    display: flex;
-    padding-top: 24px; 
-    padding-bottom: 25px;
+    @extend %flex-from-mobile;
+    // padding-top: 24px; 
+    // padding-bottom: 25px;
+    height: 80px;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid var(--logo-border);    

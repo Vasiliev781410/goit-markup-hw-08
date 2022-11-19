@@ -1,6 +1,7 @@
 .our-activities{
+    @extend %visible-only-desktop;
     @extend %padding-section;  
-    padding-top: 0;   
+    padding-top: 0;       
 }
 
 .our-activities__list{
@@ -12,6 +13,7 @@
 
 .our-activities__item{
     position: relative;   
+      
 }
 .our-activities__imgage{    
     height: 100%;

@@ -3,3 +3,15 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer__container-tablet{
+    @media  screen and (max-width: 767px){
+        text-align: center;
+    }  
+    @media  screen and (min-width: 768px){
+        display: flex;  
+    }  
+    @media  screen and (min-width: 768px) and (max-width: 1199px){
+        margin-left: 76px;       
+    }          
+}

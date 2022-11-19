@@ -7,7 +7,10 @@
     margin: 30px 32px;    
  }
  .social-links--footer{ 
-    justify-content: start;
+    justify-content: center;
+    @media screen and (min-width:768px) {  
+        justify-content: start;    
+    }          
     margin: 20px 0 0 0;    
  }
  .social-links__icon-container{
