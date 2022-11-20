@@ -20,7 +20,9 @@
  }
   
  .team__member-image{
-     margin-bottom: 30px; 
+    margin-bottom: 30px; 
+    display: block;
+    max-width: 100%;
  }
  .team__member-name{  
      margin-bottom: 10px;   

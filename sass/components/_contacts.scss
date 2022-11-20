@@ -21,10 +21,10 @@
     display: block;
     @extend %decoration;
     color: var(--secondary-text-color);  
-    font-size: 14px; 
+    font-size: 12px; 
     @media screen and (min-width:1200px) {
         display: flex;  
-        font-size: 16px;
+        font-size: 14px;
     }       
     line-height: 1.172;
     font-weight: 500;

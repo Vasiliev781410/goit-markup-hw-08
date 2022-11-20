@@ -5,20 +5,19 @@
     margin-right: auto;
 
     @media screen and (min-width: 480px) {
-        width: 480px;        
+        min-width: 480px;        
     }
     @media screen and (min-width:768px) {
-        width: 768px;        
+        min-width: 768px;        
     }
     @media screen and (min-width:1200px) {
-        width: 1200px;        
+        min-width: 1200px;        
     }       
 }  
-.container--hero{
-    display: inline-block;
-    justify-content: center;
-
-}
+/* .container--hero{     */
+/*     justify-content: center; */
+/*  */
+/* } */
 .container--footer{  
     @extend %flex-only-desktop; 
     @media screen and (min-width: 768) and (max-width:1199px) {

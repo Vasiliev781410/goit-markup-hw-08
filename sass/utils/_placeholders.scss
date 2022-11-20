@@ -3,8 +3,12 @@
 }
 
 %padding-section{
-    padding-top:  94px;
-    padding-bottom:  94px;   
+    padding-top:  60px;
+    padding-bottom:  60px; 
+    @media screen and (min-width:1200px) {   
+        padding-top:  94px;
+        padding-bottom:  94px; 
+    }  
 }
 
 %decoration-list{
@@ -63,10 +67,13 @@
 %caption-parameters{ 
     margin-bottom: 50px;
     
-    color: var(--primary-text-color);  
-    font-size: 36px;
+    color: var(--primary-text-color); 
+    font-size: 28px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }    
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.171;
     letter-spacing: 0.03em;
     text-align: center;    
 }
