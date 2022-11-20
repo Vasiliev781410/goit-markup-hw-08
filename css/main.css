@@ -215,10 +215,9 @@ body {
   outline: none;
 }
 
-.menu-container .menu-toggle.js-open-menu {
-  color: #fff;
-}
-
+/* .menu-container .menu-toggle.js-open-menu { */
+/*     color: #fff; */
+/* } */
 .menu-container .menu-toggle {
   position: absolute;
   top: 10px;
@@ -402,13 +401,38 @@ icon-menu {
 .hero {
   margin: 0 auto;
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url(../images/overlay.png), url(../images/hero.jpg);
+  background-image: url(../images/overlay.png), url(../images/hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 480px;
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/overlay.png), url(../images/hero-mobile@2x.jpg);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero {
+    background-image: url(../images/overlay.png), url(../images/hero-tablet.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 1199px), (min-resolution: 192dpi) and (max-width: 1199px), (min-resolution: 2dppx) and (max-width: 1199px) {
+  .hero {
+    background-image: url(../images/overlay.png), url(../images/hero-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/overlay.png), url(../images/hero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/overlay.png), url(../images/hero@2x.jpg);
+  }
 }
 @media screen and (min-width: 480px) {
   .hero {
