@@ -596,6 +596,8 @@ icon-menu {
   margin-bottom: 30px;
   display: block;
   max-width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .team__member-name {
