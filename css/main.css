@@ -595,7 +595,7 @@ icon-menu {
 .team__member-image {
   margin-bottom: 30px;
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   object-fit: cover;
   object-position: center;
 }
