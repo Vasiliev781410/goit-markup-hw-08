@@ -14,7 +14,11 @@
         width: 1200px;        
     }       
 }  
+.container--hero{
+    display: inline-block;
+    justify-content: center;
 
+}
 .container--footer{  
     @extend %flex-only-desktop; 
     @media screen and (min-width: 768) and (max-width:1199px) {

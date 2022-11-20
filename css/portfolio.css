@@ -27,9 +27,15 @@
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
-  .container--header {
-    display: flex;
+@media screen and (max-width: 767px) {
+  .contacts, .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
 }
 
@@ -108,6 +114,11 @@ body {
   }
 }
 
+.container--hero {
+  display: inline-block;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768) and (max-width: 1199px) {
   .container--footer {
     padding-left: 0px;
@@ -115,11 +126,48 @@ body {
   }
 }
 
+.menu-toggle {
+  cursor: pointer;
+  margin-left: auto;
+  min-width: 40px;
+  min-height: 40px;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--accent-text-color1);
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-container .menu-toggle.js-open-menu {
+  color: #fff;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-container .menu-toggle.js-close-menu {
+  color: #000;
+}
+.menu-container .menu-toggle.js-close-menu:hover, .menu-container .menu-toggle.js-close-menu:focus {
+  color: var(--accent-text-color2);
+}
+
 .container--header {
-  height: 80px;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  min-height: 80px;
   border-bottom: 1px solid var(--logo-border);
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .container--header {
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -648,7 +696,7 @@ body {
 
 .address-container__list {
   width: 100%;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7142;

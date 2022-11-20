@@ -1,4 +1,6 @@
-.mobile-menu{
-    @extend %unvisible-only-mobile;   
-   
+.mobile-menu {
+    padding: 0;
+    margin: 0; 
+    min-width: 480px;
+    min-height: 796px;  
 }

@@ -1,0 +1,35 @@
+.menu-toggle{   
+    cursor: pointer; 
+    margin-left: auto;      
+    min-width: 40px;
+    min-height: 40px; 
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--accent-text-color1);  
+    color: var(--primary-text-color); 
+    fill: var(--primary-text-color); 
+    border: none;
+    border-radius: 50%; 
+    outline: none;
+    @extend %visible-only-mobile;     
+}
+
+.menu-container .menu-toggle.js-open-menu {
+    color: #fff;
+}
+.menu-container .menu-toggle{
+    position: absolute;
+    top: 10px;
+    right: 15px;   
+}
+.menu-container .menu-toggle.js-close-menu {
+    color: #000;
+
+    &:hover,
+    &:focus{
+       color: var(--accent-text-color2); 
+    }
+}
+
+  
+  
