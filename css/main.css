@@ -503,10 +503,12 @@ icon-menu {
 
 .our-activities__item {
   position: relative;
+  width: calc((100% - 60px) / 3);
 }
 
 .our-activities__imgage {
   height: 100%;
+  width: 100%;
 }
 
 .our-activities__text {

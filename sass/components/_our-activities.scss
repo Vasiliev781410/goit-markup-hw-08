@@ -12,11 +12,13 @@
 }
 
 .our-activities__item{
-    position: relative;   
+    position: relative;
+    width: calc((100% - 60px) / 3);    
       
 }
 .our-activities__imgage{    
     height: 100%;
+    width: 100%;  
 }
 .our-activities__text{ 
     font-size: 14px;
