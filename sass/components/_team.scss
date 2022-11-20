@@ -22,7 +22,7 @@
  .team__member-image{
     margin-bottom: 30px; 
     display: block;
-    max-width: 100%;
+    min-width: 100%;   
     object-fit: cover;
     object-position: center;
  }
