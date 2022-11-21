@@ -819,7 +819,7 @@ icon-menu {
 }
 @media screen and (max-width: 480px) {
   .form-subscription__input {
-    max-width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
