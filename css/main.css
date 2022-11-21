@@ -419,6 +419,7 @@ icon-menu {
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 480px;
+  max-width: 1600px;
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
@@ -443,23 +444,6 @@ icon-menu {
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: url(../images/overlay.png), url(../images/hero@2x.jpg);
-  }
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    max-width: 767px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 1199px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -848,11 +832,20 @@ icon-menu {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 200px;
   height: 50px;
   color: var(--accent-text-color1);
   background-color: var(--accent-text-color2);
   border-radius: 4px;
+}
+@media screen and (max-width: 479px) {
+  .form-subscription__button-container {
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form-subscription__button-container {
+    width: 200px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .form-subscription__button-container {
