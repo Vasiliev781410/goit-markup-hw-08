@@ -65,12 +65,13 @@
 }
 
 %caption-parameters{ 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     
     color: var(--primary-text-color); 
     font-size: 28px;
     @media screen and (min-width: 1200px) {
         font-size: 36px;
+        margin-bottom: 50px;
     }    
     font-weight: 700;
     line-height: 1.171;
