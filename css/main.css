@@ -185,17 +185,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -446,12 +446,12 @@ icon-menu {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    min-width: 480px;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -626,7 +626,7 @@ icon-menu {
   justify-content: center;
   margin-bottom: 30px;
   background: var(--bg-icon-features);
-  min-height: 120px;
+  height: 120px;
 }
 
 .features__name {
